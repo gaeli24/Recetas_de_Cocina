@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Recetas de Cocina</string>
+    <string name="add_recipe_content_description">Añadir nueva receta</string>
+    <string name="recipe_image_content_description">Imagen de la receta</string>
+    <string name="favorite_icon_content_description">Marcar como favorito</string>
+    <string name="app_toolbar_title">Mis Recetas</string>
 </resources>

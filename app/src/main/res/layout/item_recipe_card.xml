@@ -26,7 +26,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             tools:src="@tools:sample/backgrounds/scenic"
-            android:contentDescription="Imagen de la receta" /> <TextView
+            android:contentDescription="@string/recipe_image_content_description" />
+        <TextView
         android:id="@+id/textViewRecipeName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -66,7 +67,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/textViewRecipeName"
             app:layout_constraintBottom_toBottomOf="@id/textViewPrepTime"
-            app:srcCompat="@drawable/ic_favorite_border" android:contentDescription="Marcar como favorito" />
+            app:srcCompat="@drawable/ic_favorite_border" android:contentDescription="@string/favorite_icon_content_description" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("kotlin-kapt")
 }
 
 android {
@@ -57,15 +58,16 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("com.github.bumptech.glide:glide:4.16.0") // Versión actual a la fecha
+    kapt("com.github.bumptech.glide:compiler:4.16.0") // Para el procesador de anotaciones
 
-    // Dependencias que probablemente ya tienes
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat) // Para la Toolbar y compatibilidad
     implementation(libs.material) // Para FloatingActionButton, CardView, y otros componentes de Material Design
     implementation(libs.androidx.constraintlayout) // Para ConstraintLayout
     implementation(libs.androidx.recyclerview) // Para RecyclerView
     implementation(libs.androidx.cardview) // Para CardView (a veces ya viene con material, pero es buena tenerla explícita)
-    // Dependencias para testing (probablemente ya las tienes)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
